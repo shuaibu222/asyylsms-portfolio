@@ -19,7 +19,7 @@ export default function Home() {
                         <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                             <span className="text-white font-semibold text-sm">A</span>
                         </div>
-                        <span className="text-xl font-light tracking-tight">Asyyl SMS</span>
+                        <span className="text-xl font-light tracking-tight">AsyylSMS</span>
                     </div>
 
                     <div className="md:hidden">
@@ -55,20 +55,20 @@ export default function Home() {
                 </nav>
 
                 {/* Hero Section */}
-                <section className="relative min-h-screen w-full max-w-[85vw] mx-auto flex flex-col items-center justify-center text-center overflow-hidden">
+                <section className="relative min-h-screen w-full mx-auto flex flex-col items-center justify-center text-center overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-black via-purple-900/20 to-blue-900/20 z-0"></div>
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent z-0"></div>
 
                     <div className="relative z-20">
-                        <h1 className="text-6xl md:text-8xl font-semibold mb-8 tracking-tight leading-tight">
-                            Software. <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Perfected.</span>
+                        <h1 className="text-6xl md:text-8xl font-semibold mb-8 tracking-tight">
+                            Technology. <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Redefined.</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-300 mb-12 font-light max-w-3xl mx-auto leading-relaxed">
-                            We build comprehensive online platforms that transform education and business management through technology.
+                            Innovative digital solutions. Websites and software that inspire.
                         </p>
-                        <button className="group relative bg-white text-black px-14 py-5 rounded-full font-medium text-lg transition-all duration-500 hover:scale-105">
+                        <button className="group relative bg-white text-black px-14 py-5 rounded-full font-medium text-lg transition-all duration-300 hover:bg-gray-200">
                             <span className="relative z-10 flex items-center justify-center gap-3">
-                                Start a Project
+                                Begin Now
                                 <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
                             </span>
                         </button>
@@ -80,16 +80,16 @@ export default function Home() {
                     <div className="max-w-[85vw] mx-auto flex flex-col lg:flex-row gap-16 items-center">
                         {/* Left Side - Text Content */}
                         <div className="lg:w-1/2">
-                            <h2 className="text-5xl md:text-6xl font-semibold mb-8 tracking-tight">Our Process.</h2>
+                            <h2 className="text-5xl md:text-6xl font-semibold mb-8 tracking-tight">Precision. Craft.</h2>
                             <p className="text-xl text-gray-300 leading-relaxed mb-8 font-light">
-                                We follow a meticulous process to deliver robust online platforms that power businesses and educational institutions worldwide.
+                                Seamless technology. Designed to captivate. Built to perform.
                             </p>
                             <div className="space-y-6">
                                 {[
-                                    "Comprehensive requirement analysis and planning",
-                                    "Agile development with continuous integration",
-                                    "Rigorous testing across all devices and platforms",
-                                    "Seamless deployment with ongoing support"
+                                    "Insightful analysis. Strategic vision.",
+                                    "Agile creation. Relentless refinement.",
+                                    "Rigorous testing. Uncompromising quality.",
+                                    "Flawless launch. Ongoing excellence."
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start space-x-4 text-lg">
                                         <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
@@ -107,8 +107,8 @@ export default function Home() {
                                 { number: "03", title: "Develop" },
                                 { number: "04", title: "Deliver" }
                             ].map((step, index) => (
-                                <div key={step.number} className="aspect-square rounded-2xl bg-gradient-to-br from-gray-900 to-black border border-gray-800 flex flex-col items-center justify-center p-6 group hover:border-blue-500/50 transition-all duration-500">
-                                    <div className="text-5xl font-light text-gray-700 group-hover:text-blue-400 transition-colors duration-500 mb-4">
+                                <div key={step.number} className="aspect-square rounded-2xl bg-gradient-to-br from-gray-900 to-black border border-gray-800 flex flex-col items-center justify-center p-6 group hover:border-gray-600 transition-all duration-300">
+                                    <div className="text-5xl font-light text-gray-700 group-hover:text-blue-400 transition-colors duration-300 mb-4">
                                         {step.number}
                                     </div>
                                     <h3 className="text-xl font-semibold text-white text-center">{step.title}</h3>
@@ -118,51 +118,51 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Services Section - Updated for Your Business */}
+                {/* Services Section */}
                 <section id="services" className="w-full py-32">
                     <div className="max-w-[85vw] mx-auto">
                         <div className="text-center mb-20">
-                            <h2 className="text-5xl md:text-6xl font-semibold mb-6 tracking-tight">Our Solutions.</h2>
+                            <h2 className="text-5xl md:text-6xl font-semibold mb-6 tracking-tight">Solutions. Inspired.</h2>
                             <p className="text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">
-                                Comprehensive online platforms designed to streamline operations and enhance learning experiences.
+                                Digital experiences that transform. Websites and software, reimagined.
                             </p>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {[
                                 {
-                                    title: "Business Management Systems",
-                                    description: "Complete ERP solutions that automate operations, inventory, and customer relationships for growing businesses."
+                                    title: "Custom Websites",
+                                    description: "Stunning designs. Seamless functionality. Unforgettable experiences."
                                 },
                                 {
-                                    title: "School Management Platforms",
-                                    description: "Comprehensive systems handling admissions, academics, fees, and communications for educational institutions."
+                                    title: "Web Applications",
+                                    description: "Powerful apps. Streamlined workflows. Limitless potential."
                                 },
                                 {
-                                    title: "Online Academies",
-                                    description: "Interactive learning platforms for English, Arabic, Islamic studies, and coding with live classes and progress tracking."
+                                    title: "Mobile Apps",
+                                    description: "Native experiences. Intuitive interfaces. Always connected."
                                 },
                                 {
-                                    title: "E-Learning Systems",
-                                    description: "Custom LMS solutions with video streaming, assessments, and certification for diverse educational needs."
+                                    title: "E-Commerce Platforms",
+                                    description: "Engaging stores. Seamless transactions. Amplified sales."
                                 },
                                 {
-                                    title: "Multi-tenant Platforms",
-                                    description: "Scalable architectures supporting multiple institutions or businesses on a single, secure platform."
+                                    title: "Software Solutions",
+                                    description: "Tailored tools. Optimized performance. Business transformed."
                                 },
                                 {
-                                    title: "Mobile Applications",
-                                    description: "Native mobile apps complementing our web platforms for on-the-go access and enhanced user engagement."
+                                    title: "Cloud Integrations",
+                                    description: "Scalable systems. Secure data. Future-proof technology."
                                 }
                             ].map((service, index) => (
-                                <div key={index} className="group p-8 border border-gray-800 rounded-3xl hover:border-gray-600 transition-all duration-500">
+                                <div key={index} className="group p-8 border border-gray-800 rounded-3xl hover:border-gray-600 transition-all duration-300">
                                     <h3 className="text-2xl font-semibold mb-4 text-white">{service.title}</h3>
                                     <p className="text-gray-400 mb-8 font-light leading-relaxed">
                                         {service.description}
                                     </p>
-                                    <button className="group relative text-white px-8 py-4 rounded-full font-medium transition-all duration-500 border border-gray-600 hover:border-white">
+                                    <button className="group relative text-white px-8 py-4 rounded-full font-medium transition-all duration-300 border border-gray-600 hover:border-gray-400">
                                         <span className="relative z-10 flex items-center gap-2">
-                                            Learn More
+                                            Discover More
                                             <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
                                         </span>
                                     </button>
@@ -172,13 +172,13 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Portfolio Section - Updated for Your Projects */}
+                {/* Portfolio Section */}
                 <section id="work" className="w-full py-32 bg-black">
                     <div className="max-w-[85vw] mx-auto">
                         <div className="mb-20">
-                            <h2 className="text-5xl md:text-6xl font-semibold mb-6 tracking-tight">Our Platforms.</h2>
+                            <h2 className="text-5xl md:text-6xl font-semibold mb-6 tracking-tight">Impact. Realized.</h2>
                             <p className="text-xl text-gray-300 max-w-2xl font-light leading-relaxed">
-                                Real-world solutions powering businesses and educational institutions across multiple sectors.
+                                Digital solutions that empower. Innovation that delivers.
                             </p>
                         </div>
 
@@ -186,17 +186,17 @@ export default function Home() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 {[
                                     {
-                                        name: "Business Management ERP",
-                                        desc: "Comprehensive enterprise resource planning system for small to medium businesses",
-                                        tech: "React + Node.js + PostgreSQL"
+                                        name: "E-Commerce Platform",
+                                        desc: "Seamless shopping. Amplified conversions.",
+                                        tech: "React + Node.js + Stripe"
                                     },
                                     {
-                                        name: "School Management System",
-                                        desc: "End-to-end school administration platform with parent and teacher portals",
-                                        tech: "Vue.js + Python + MySQL"
+                                        name: "Productivity App",
+                                        desc: "Streamlined workflows. Empowered teams.",
+                                        tech: "Vue.js + Firebase + AWS"
                                     }
                                 ].map((project, index) => (
-                                    <div key={index} className="group aspect-video rounded-3xl bg-gradient-to-br from-gray-900 to-black border border-gray-800 hover:border-gray-600 transition-all duration-500 p-12 flex flex-col justify-center">
+                                    <div key={index} className="group aspect-video rounded-3xl bg-gradient-to-br from-gray-900 to-black border border-gray-800 hover:border-gray-600 transition-all duration-300 p-12 flex flex-col justify-center">
                                         <h3 className="text-4xl font-semibold mb-4 text-white">{project.name}</h3>
                                         <p className="text-gray-300 mb-8 text-lg font-light">{project.desc}</p>
                                         <div className="flex items-center gap-4 text-blue-400">
@@ -209,22 +209,22 @@ export default function Home() {
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                                 {[
                                     {
-                                        name: "Online English Academy",
-                                        tech: "React + Firebase + WebRTC",
-                                        type: "E-Learning Platform"
+                                        name: "Corporate Website",
+                                        tech: "Next.js + Tailwind + GraphQL",
+                                        type: "Digital Presence"
                                     },
                                     {
-                                        name: "Arabic Learning Platform",
-                                        tech: "Next.js + MongoDB + Stripe",
-                                        type: "Language Academy"
+                                        name: "Mobile Banking App",
+                                        tech: "React Native + Node.js + MongoDB",
+                                        type: "Fintech Solution"
                                     },
                                     {
-                                        name: "Coding Bootcamp",
-                                        tech: "Vue.js + Django + AWS",
-                                        type: "Tech Education"
+                                        name: "SaaS Dashboard",
+                                        tech: "Angular + Python + PostgreSQL",
+                                        type: "Business Tool"
                                     }
                                 ].map((project, index) => (
-                                    <div key={index} className="group aspect-square rounded-3xl bg-gradient-to-br from-gray-900 to-black border border-gray-800 hover:border-gray-600 transition-all duration-500 p-8 flex flex-col justify-between">
+                                    <div key={index} className="group aspect-square rounded-3xl bg-gradient-to-br from-gray-900 to-black border border-gray-800 hover:border-gray-600 transition-all duration-300 p-8 flex flex-col justify-between">
                                         <div>
                                             <h3 className="text-3xl font-semibold mb-4 text-white">{project.name}</h3>
                                             <p className="text-gray-300 mb-6 font-light">{project.type}</p>
@@ -243,31 +243,31 @@ export default function Home() {
                 <section id="testimonials" className="w-full py-32">
                     <div className="max-w-[85vw] mx-auto">
                         <div className="text-center mb-20">
-                            <h2 className="text-5xl md:text-6xl font-semibold mb-6 tracking-tight">Client Stories.</h2>
+                            <h2 className="text-5xl md:text-6xl font-semibold mb-6 tracking-tight">Stories. Success.</h2>
                             <p className="text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">
-                                Don&apos;t just take our word for it. Here&apos;s what our partners have to say.
+                                Our partners thrive. Their victories, our pride.
                             </p>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {[
                                 {
-                                    quote: "The school management system transformed our administrative efficiency. Parent engagement increased by 300%.",
-                                    author: "Dr. Ahmed Hassan",
-                                    company: "Greenfield International School"
+                                    quote: "Transformed our brand. Engagement redefined.",
+                                    author: "Emma Carter",
+                                    company: "BrightWave Retail"
                                 },
                                 {
-                                    quote: "Our business operations became seamless with the custom ERP. Inventory management is now automated and accurate.",
-                                    author: "Mohammed Al-Rashid",
-                                    company: "Al-Rashid Trading Co."
+                                    quote: "Streamlined operations. Efficiency unleashed.",
+                                    author: "Liam Patel",
+                                    company: "TechTrend Solutions"
                                 },
                                 {
-                                    quote: "The online academy platform provided exceptional learning experiences for our students across multiple countries.",
-                                    author: "Sarah Johnson",
-                                    company: "Global English Institute"
+                                    quote: "Inspired experiences. Users connected globally.",
+                                    author: "Sophie Nguyen",
+                                    company: "GlobalTech Innovations"
                                 }
                             ].map((testimonial, index) => (
-                                <div key={index} className="p-8 border border-gray-800 rounded-3xl hover:border-gray-600 transition-all duration-500">
+                                <div key={index} className="p-8 border border-gray-800 rounded-3xl hover:border-gray-600 transition-all duration-300">
                                     <div className="text-4xl text-gray-600 mb-4">&quot;</div>
                                     <p className="text-lg text-gray-300 italic mb-6 leading-relaxed font-light">&quot;{testimonial.quote}&quot;</p>
                                     <footer className="text-right">
@@ -283,19 +283,19 @@ export default function Home() {
                 {/* CTA Section */}
                 <section id="contact" className="w-full py-32 bg-black">
                     <div className="max-w-[85vw] mx-auto text-center">
-                        <h2 className="text-5xl md:text-6xl font-semibold mb-8 tracking-tight">Let&apos;s Build Together.</h2>
+                        <h2 className="text-5xl md:text-6xl font-semibold mb-8 tracking-tight">Innovate. Now.</h2>
                         <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-                            Ready to transform your business or educational institution with custom software solutions?
+                            Your vision. Our technology. Infinite possibilities.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <button className="group relative bg-white text-black px-12 py-5 rounded-full font-medium text-lg transition-all duration-500 hover:scale-105">
+                            <button className="group relative bg-white text-black px-12 py-5 rounded-full font-medium text-lg transition-all duration-300 hover:bg-gray-200">
                                 <span className="relative z-10 flex items-center justify-center gap-3">
-                                    Start Conversation
+                                    Start Now
                                     <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
                                 </span>
                             </button>
-                            <button className="group relative border border-gray-600 text-white px-12 py-5 rounded-full font-medium text-lg transition-all duration-500 hover:border-white">
-                                <span className="relative z-10">View Our Platforms</span>
+                            <button className="group relative border border-gray-600 text-white px-12 py-5 rounded-full font-medium text-lg transition-all duration-300 hover:border-gray-400">
+                                <span className="relative z-10">Explore Solutions</span>
                             </button>
                         </div>
                     </div>
@@ -308,7 +308,7 @@ export default function Home() {
                             <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                                 <span className="text-white font-semibold text-xs">A</span>
                             </div>
-                            <span className="text-lg font-light">Asyyl SMS</span>
+                            <span className="text-lg font-light">AsyylSMS</span>
                         </div>
                         <div className="flex gap-6 mb-6 md:mb-0">
                             {['Privacy', 'Terms', 'Contact', 'GitHub'].map((item) => (
@@ -318,7 +318,7 @@ export default function Home() {
                             ))}
                         </div>
                         <p className="text-gray-400 text-sm font-light">
-                            &copy; 2024 Asyyl SMS. Crafted with precision.
+                            &copy; 2025 AsyylSMS. Crafted with vision.
                         </p>
                     </div>
                 </footer>
