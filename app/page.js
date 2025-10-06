@@ -14,52 +14,54 @@ export default function Home() {
         <main className="bg-black">
             <article className="flex min-h-screen flex-col items-center justify-between text-white">
                 {/* Navigation - Simple Apple-style */}
-                <nav className="w-full max-w-[85vw] mx-auto flex items-center justify-between py-6 bg-black/90 backdrop-blur-xl sticky top-0 z-50">
-                    <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                            <span className="text-white font-semibold text-sm">A</span>
+                <div className="w-full bg-black/90 backdrop-blur-xl sticky top-0 z-50">
+                    <nav className="w-full max-w-[85vw] mx-auto flex items-center justify-between py-6">
+                        <div className="flex items-center gap-3">
+                            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                                <span className="text-white font-semibold text-sm">A</span>
+                            </div>
+                            <span className="text-sm font-light tracking-tight">AsyylSMS</span>
                         </div>
-                        <span className="text-xl font-light tracking-tight">AsyylSMS</span>
-                    </div>
 
-                    <div className="md:hidden">
-                        <button
-                            onClick={toggleMenu}
-                            className="text-white p-2 rounded-lg hover:bg-white/10 transition-all duration-300"
-                        >
-                            {isOpen ? (
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            ) : (
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-                                </svg>
-                            )}
-                        </button>
-                    </div>
-
-                    <ul className={`${isOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-12 absolute md:relative top-20 md:top-0 left-0 w-full md:w-auto bg-black/95 md:bg-transparent backdrop-blur-xl md:backdrop-blur-none p-8 md:p-0 border-t border-gray-800/60 md:border-none`}>
-                        {['Design', 'Develop', 'Work', 'Contact'].map((item) => (
-                            <li key={item}>
-                                <a
-                                    href={`#${item.toLowerCase()}`}
-                                    className="block py-2 md:py-0 text-lg md:text-base font-light text-gray-300 hover:text-white transition-all duration-300"
-                                    onClick={toggleMenu}
-                                >
-                                    {item}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </nav>
+                        <div className="md:hidden">
+                            <button
+                                onClick={toggleMenu}
+                                className="text-white p-2 rounded-lg hover:bg-white/10 transition-all duration-300"
+                            >
+                                {isOpen ? (
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                ) : (
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                                    </svg>
+                                )}
+                            </button>
+                        </div>
+                        {/* lets add apple animation to the navigation */}
+                        <ul className={`${isOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-12 absolute md:relative top-20 md:top-0 left-0 w-full md:w-auto bg-black/95 md:bg-transparent backdrop-blur-xl md:backdrop-blur-none p-8 md:p-0 border-t border-gray-800/60 md:border-none transform transition-all duration-300`}>
+                            {['Design', 'Develop', 'Work', 'Contact'].map((item) => (
+                                <li key={item}>
+                                    <a
+                                        href={`#${item.toLowerCase()}`}
+                                        className="block py-2 md:py-0 text-sm font-light text-gray-300 hover:text-white transition-all duration-300"
+                                        onClick={toggleMenu}
+                                    >
+                                        {item}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
+                </div>
 
                 {/* Hero Section */}
                 <section className="relative min-h-screen w-full mx-auto flex flex-col items-center justify-center text-center overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-black via-purple-900/20 to-blue-900/20 z-0"></div>
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent z-0"></div>
 
-                    <div className="relative z-20">
+                    <div className="relative z-20 max-w-[85vw] mx-auto">
                         <h1 className="text-6xl md:text-8xl font-semibold mb-8 tracking-tight">
                             Technology. <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Redefined.</span>
                         </h1>
