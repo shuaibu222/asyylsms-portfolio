@@ -397,10 +397,15 @@ export default function Home() {
                 <footer className="w-full py-12 border-t border-gray-800/60">
                     <div className="max-w-[85vw] mx-auto flex flex-col md:flex-row justify-between items-center">
                         <div className="flex items-center gap-3 mb-6 md:mb-0">
-                            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                                <span className="text-white font-semibold text-xs">A</span>
+                            <div className="w-10 h-10 relative">
+                                <Image
+                                    src="/logo.png"
+                                    alt="AsyylSMS Logo"
+                                    width={32}
+                                    height={32}
+                                    className="object-contain"
+                                />
                             </div>
-                            <span className="text-lg font-light">AsyylSMS</span>
                         </div>
                         <div className="flex gap-6 mb-6 md:mb-0">
                             {['Privacy', 'Terms', 'Contact', 'GitHub'].map(item => (
